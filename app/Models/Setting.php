@@ -9,7 +9,7 @@ class Setting extends Model
 {
     use HasFactory;
 
-    public function get_email_settings()
+    public function get()
     {
 
     }
