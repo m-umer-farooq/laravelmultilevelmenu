@@ -16,12 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    //return view('welcome');
-
     $menu = Menu::where('parent_id',0)->get();
-    return view('dynamicMenu',[
-        'menus' => $menu
-    ]);
+
+    return view('dynamicMenu',['menus' => $menu]);
 });
 
 
