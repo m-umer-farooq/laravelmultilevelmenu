@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
+    //dd(config('MAIL_FROM_NAME'));
+
     $menu = Menu::where('parent_id',0)->get();
 
     return view('dynamicMenu',['menus' => $menu]);

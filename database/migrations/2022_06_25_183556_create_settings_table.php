@@ -14,16 +14,11 @@ class CreateSettingsTable extends Migration
     public function up()
     {
         Schema::create('settings', function (Blueprint $table) {
-            $table->string('mail_mailer')->nullable(true);
-            $table->string('mail_host')->nullable(true);
-            $table->string('mail_port')->nullable(true);
-            $table->string('mail_username')->nullable(true);
-            $table->string('mail_password')->nullable(true);
-            $table->string('mail_encryption')->nullable(true);
-            $table->string('mail_from_address')->nullable(true);
-            $table->string('mail_from_name')->nullable(true);
+            $table->string('key')->nullable(true);
+            $table->string('value')->nullable(true);
             $table->timestamps();
         });
+
     }
 
     /**

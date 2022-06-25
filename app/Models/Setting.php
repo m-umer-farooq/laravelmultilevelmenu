@@ -9,8 +9,4 @@ class Setting extends Model
 {
     use HasFactory;
 
-    public function get()
-    {
-
-    }
 }
